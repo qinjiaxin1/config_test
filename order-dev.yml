@@ -1,11 +1,23 @@
 spring:
   application:
-    name: order
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    username: qin
+    name: config
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/qinjiaxin1/config_test.git
+          username: 732753413@qq.com
+          password: slk32068
+          basedir: G://config/basedir
+    bus:
+      enabled: true
+      trace:
+        enabled: true
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
     password: 123456
-    url: jdbc:mysql://127.0.0.1:3306/test?characterEncoding=utf-8&useSSL=false
 env:
  dev1
 ted:
