@@ -19,6 +19,6 @@ spring:
     username: guest
     password: 123456
 env:
- dev1
+ dev2
 ted:
  Love you forever,Ted ^^
