@@ -1,0 +1,19 @@
+zuul:
+  routes:
+    product: /myProduct/**
+  sensitive-headers:
+#  ignored-patterns:
+#    - /**/product/listForOrder
+#    myProduct:
+#      path: /myProduct/**
+#     serviceId: product
+management:
+  security:
+    enabled: false    
+spring:
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: 123456
+env: api-gateway-e
