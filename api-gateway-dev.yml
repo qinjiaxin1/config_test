@@ -16,3 +16,4 @@ spring:
     port: 5672
     username: guest
     password: 123456
+env: api-gateway-e
